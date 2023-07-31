@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint \"**/*.{js,jsx,ts,tsx,json}\" ",
+    "lint:fix": "eslint --fix \"**/*.{js,jsx,ts,tsx,json}\" ",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,md,json,scss}\" --config ./.prettierrc"
   },
   "dependencies": {
     "@types/node": "20.4.5",
@@ -28,6 +30,7 @@
     "eslint-config-prettier": "^8.9.0",
     "eslint-import-resolver-typescript": "^3.5.5",
     "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.1",
     "prettier": "^3.0.0",
     "prettier-plugin-tailwindcss": "^0.4.1"
   }
