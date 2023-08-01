@@ -13,7 +13,10 @@ const About = () => {
       id="about"
     >
       <SectionHeading>About Me</SectionHeading>
-      <SectionSubheading>Currently based in: Argentina 🇦🇷</SectionSubheading>
+      <SectionSubheading>
+        📍 Currently based in:{" "}
+        <span className="underline decoration-[#61B2E4] decoration-wavy">Argentina</span> 🇦🇷
+      </SectionSubheading>
 
       <p className="mb-3 antialiased font-normal">
         I graduated from the Universidad Nacional del Comahue (Neuquén, Argentina 🇦🇷) with a degree in
