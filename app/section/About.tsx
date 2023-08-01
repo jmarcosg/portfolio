@@ -12,7 +12,7 @@ const About = () => {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
+      <SectionHeading>About Me</SectionHeading>
       <SectionSubheading>Currently based in: Argentina 🇦🇷</SectionSubheading>
 
       <p className="mb-3 antialiased font-normal">
