@@ -103,24 +103,59 @@ export const projectsData = [
   }
 ] as const;
 
-export const skillsData = [
+export const languagesData = [
+  {
+    name: "Spanish (Native)",
+    flag: "🇪🇸"
+  },
+  {
+    name: "English (C1)",
+    flag: "🇬🇧"
+  }
+] as const;
+
+export const sofkSkillsData = [
+  "Communication",
+  "Proactivity",
+  "Team-working",
+  "Adaptability",
+  "Crativity",
+  "Growth mindset",
+  "Mentoring"
+] as const;
+
+export const frontendAndDesignSkillsData = [
   "HTML",
   "CSS",
   "JavaScript",
   "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
+  "Angular",
   "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion"
+  "Framer Motion",
+  "Tailwind CSS",
+  "Material UI",
+  "Bootstrap",
+  "Figma",
+  "Photoshop",
+  "Illustrator"
 ] as const;
+
+export const backendSkillsData = [
+  "Express",
+  "Node.js",
+  "NestJS",
+  "PHP",
+  "Laravel",
+  "Prisma",
+  "SQL",
+  "SQL Server",
+  "MongoDB",
+  "MySQL",
+  "PostgreSQL"
+] as const;
+
+export const mobileSkillsData = ["Ionic", "React Native"] as const;
+
+export const toolsSkillsData = ["Git", "Docker", "Jest", "Postman"] as const;
