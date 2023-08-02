@@ -5,7 +5,7 @@ type SectionSubheadingProps = {
 };
 
 const SectionSubheading = ({ children }: SectionSubheadingProps) => {
-  return <h3 className="text-xl font-medium mb-8 text-center">{children}</h3>;
+  return <h3 className="text-xl font-medium my-8 text-center text-gray-700">{children}</h3>;
 };
 
 export default SectionSubheading;
