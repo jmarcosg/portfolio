@@ -9,6 +9,7 @@
       "recommended": true,
       "suspicious": {
         "noExplicitAny": "warn",
+        "noArrayIndexKey": "warn",
         "recommended": true
       },
       "correctness": {
@@ -18,8 +19,8 @@
       "style": {
         "noUnusedTemplateLiteral": "off",
         "noVar": "warn",
-        "recommended": true,
-        "useSelfClosingElements": "warn"
+        "useSelfClosingElements": "warn",
+        "recommended": true
       },
       "a11y": {
         "useKeyWithClickEvents": "off",
