@@ -2,7 +2,7 @@ import pantryImg from "@/public/pantry.png";
 import petAdoptionsImg from "@/public/petadoptions.png";
 import servcentdemoImg from "@/public/servcentdemo.png";
 import React from "react";
-import { FaReact } from "react-icons/fa";
+import { BiCodeAlt } from "react-icons/bi";
 import { LuGraduationCap } from "react-icons/lu";
 
 export const links = [
@@ -44,7 +44,7 @@ export const educationData = [
     description: "",
     icon: React.createElement(LuGraduationCap),
     date: "2023 - 2028 (expected)",
-    status: "In progress"
+    status: "pending"
   },
   {
     title: "BS Software Development",
@@ -53,26 +53,26 @@ export const educationData = [
     description: "",
     icon: React.createElement(LuGraduationCap),
     date: "2020 - 2023",
-    status: "Graduated"
+    status: "completed"
   }
 ] as const;
 
 export const experiencesData = [
   {
-    title: "Full-Stack Software Developer",
+    title: "Secretaría de Modernización - Municipalidad de Neuquén",
     location: "Neuquén, NQN, Argentina",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present"
+      "I'm now a full-stack developer who is mainly in charge of the front-end development of software solutions that are built to help Neuquén's citizens and digitalize the city's processes. I'm also in charge of overseeing and teaching interns and junior developers that join the team.",
+    icon: React.createElement(BiCodeAlt),
+    date: "2022 - Present"
   },
   {
     title: "Universidad Nacional del Comahue",
     location: "Neuquén, NQN, Argentina",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(FaReact),
-    date: "2019"
+      "Worked here as front-end developer and also was as an asistant to the project manager, where I was in charge of the communication between the team and the client, as well as the planning and organization of the project.",
+    icon: React.createElement(BiCodeAlt),
+    date: "2020 - 2022"
   }
 ] as const;
 
@@ -103,59 +103,39 @@ export const projectsData = [
   }
 ] as const;
 
-export const languagesData = [
-  {
-    name: "Spanish (Native)",
-    flag: "🇪🇸"
-  },
-  {
-    name: "English (C1)",
-    flag: "🇬🇧"
-  }
-] as const;
+export const languagesData = ["Spanish (Native)", "English (C1)"];
 
-export const sofkSkillsData = [
-  "Communication",
-  "Proactivity",
-  "Team-working",
-  "Adaptability",
-  "Crativity",
-  "Growth mindset",
-  "Mentoring"
-] as const;
-
-export const frontendAndDesignSkillsData = [
+export const codingLanguagesAndToolsData = [
   "HTML",
   "CSS",
   "JavaScript",
   "TypeScript",
-  "React",
-  "Next.js",
-  "Angular",
-  "Redux",
-  "Framer Motion",
-  "Tailwind CSS",
-  "Material UI",
-  "Bootstrap",
+  "SASS",
+  "Node.js",
+  "PHP",
+  "SQL",
   "Figma",
   "Photoshop",
   "Illustrator"
-] as const;
+];
 
-export const backendSkillsData = [
+export const librariesAndFrameworksData = [
+  "React",
+  "Next.js",
+  "Angular",
+  "React Native",
+  "Ionic",
+  "Redux",
   "Express",
-  "Node.js",
   "NestJS",
-  "PHP",
   "Laravel",
   "Prisma",
-  "SQL",
-  "SQL Server",
-  "MongoDB",
-  "MySQL",
-  "PostgreSQL"
-] as const;
+  "Framer Motion",
+  "Tailwind CSS",
+  "Material UI",
+  "Bootstrap"
+];
 
-export const mobileSkillsData = ["Ionic", "React Native"] as const;
+export const databasesData = ["SQL Server", "MongoDB", "MySQL", "PostgreSQL"];
 
-export const toolsSkillsData = ["Git", "Docker", "Jest", "Postman"] as const;
+export const otherToolsSkillsData = ["Git", "Docker", "Jest", "Postman"];
