@@ -38,8 +38,7 @@ export const links = [
 
 export const educationData = [
   {
-    title: "BS Computer Science",
-    school: "Universidad Nacional del Comahue",
+    title: "BS Computer Science - Universidad Nacional del Comahue",
     location: "Neuquén, NQN, Argentina",
     description: "",
     icon: React.createElement(LuGraduationCap),
@@ -47,8 +46,7 @@ export const educationData = [
     status: "pending"
   },
   {
-    title: "BS Software Development",
-    school: "Universidad Nacional del Comahue",
+    title: "BS Software Development - Universidad Nacional del Comahue",
     location: "Neuquén, NQN, Argentina",
     description: "",
     icon: React.createElement(LuGraduationCap),
