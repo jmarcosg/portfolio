@@ -40,7 +40,8 @@ export const educationData = [
   {
     title: "BS Computer Science - Universidad Nacional del Comahue",
     location: "Neuquén, NQN, Argentina",
-    description: "",
+    description:
+      "I'm currently improving and learning about algorithms, data structures, and other computer science topics.",
     icon: React.createElement(LuGraduationCap),
     date: "2023 - 2028 (expected)",
     status: "pending"
@@ -48,7 +49,8 @@ export const educationData = [
   {
     title: "BS Software Development - Universidad Nacional del Comahue",
     location: "Neuquén, NQN, Argentina",
-    description: "",
+    description:
+      "Spent 3 years learning the fundamentals of front-end and back-end development, as well as some other topics like databases and UX/UI. Graduated with GPA: 9.0/10.0",
     icon: React.createElement(LuGraduationCap),
     date: "2020 - 2023",
     status: "completed"
