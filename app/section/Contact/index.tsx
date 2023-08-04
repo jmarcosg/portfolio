@@ -31,14 +31,15 @@ const Contact = () => {
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
-        <a className="underline" href="mailto:example@gmail.com">
-          example@gmail.com
-        </a>{" "}
-        or through this form.
+        <a className="underline" href="mailto:jmarcos.gonzalez94@gmail.com">
+          jmarcos.gonzalez94@gmail.com
+        </a>
       </p>
 
+      <p className="text-gray-700 mt-6 dark:text-white/80">Or through this form</p>
+
       <form
-        className="mt-10 flex flex-col dark:text-black"
+        className="mt-4 flex flex-col dark:text-black"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
 
