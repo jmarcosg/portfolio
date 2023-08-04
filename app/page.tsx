@@ -1,6 +1,7 @@
 "use client";
 
 import { SectionDivider } from "@/components";
+import { Contact } from "./section";
 import About from "./section/About";
 import Education from "./section/Education";
 import Experience from "./section/Experience";
@@ -18,6 +19,7 @@ export default function Home() {
       <Skills />
       <Experience />
       <Education />
+      <Contact />
     </main>
   );
 }
