@@ -32,11 +32,13 @@ const SkillStack = ({ title, skillsData }: SkillStackProps) => {
       }}
       custom={"languages"}
     >
-      <h4 className="text-xl uppercase font-medium my-8 text-center text-gray-700">{title}</h4>
+      <h4 className="text-xl uppercase font-medium my-8 text-center text-gray-700 dark:text-gray-300">
+        {title}
+      </h4>
       <motion.ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li
-            className="bg-white borderBlack rounded-xl px-5 py-3 !text-base"
+            className="bg-white borderBlack rounded-xl px-5 py-3 !text-base dark:bg-white/10 dark:text-white/80"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"

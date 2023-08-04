@@ -6,8 +6,7 @@ import jmarcosgImg from "@/public/jmarcosg.webp";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { BsLinkedin } from "react-icons/bs";
-import { FaGithubSquare } from "react-icons/fa";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiMail } from "react-icons/hi";
 
 const Intro = () => {
@@ -75,7 +74,7 @@ const Intro = () => {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-gray-950 active:scale-105 transition"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
@@ -85,7 +84,7 @@ const Intro = () => {
         </Link>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.05] hover:scale-[1.05] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack"
+          className="group bg-white p-4 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="https://www.linkedin.com/in/jmarcosg/"
           target="_blank"
           rel="noreferrer"
@@ -94,12 +93,12 @@ const Intro = () => {
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.05] hover:scale-[1.05] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack"
+          className="group bg-white p-4 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="https://github.com/jmarcosg"
           target="_blank"
           rel="noreferrer"
         >
-          <FaGithubSquare />
+          <BsGithub />
         </a>
       </motion.div>
     </section>
