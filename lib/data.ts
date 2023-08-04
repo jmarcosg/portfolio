@@ -47,10 +47,10 @@ export const educationData = [
     status: "pending"
   },
   {
-    title: "BS Software Development - Universidad Nacional del Comahue",
+    title: "BTech Software Development - Universidad Nacional del Comahue",
     location: "Neuquén, NQN, Argentina",
     description:
-      "Spent 3 years learning the fundamentals of front-end and back-end development, as well as some other topics like databases and UX/UI. Graduated with GPA: 9.0/10.0",
+      "Spent 3 years learning the fundamentals of front-end and back-end development, as well as some other topics like algorithms, data structures, databases and UX/UI.",
     icon: React.createElement(LuGraduationCap),
     date: "2020 - 2023",
     status: "completed"
@@ -81,7 +81,7 @@ export const projectsData = [
     title: "Pantry",
     description:
       "A web app for managing your pantry. It also has a native mobile app for scanning barcodes and adding items to your pantry.",
-    tags: ["React", "React Native", "TypeScript", "Next.js", "Tailwind", "Prisma", "MySQL"],
+    tags: ["React", "React Native", "TypeScript", "Next.js", "Tailwind", "Prisma", "SQL"],
     imageUrl: pantryImg,
     workRelated: false
   },
@@ -108,12 +108,13 @@ export const languagesData = ["Spanish (Native)", "English (C1)"];
 export const codingLanguagesAndToolsData = [
   "HTML",
   "CSS",
+  "SASS",
   "JavaScript",
   "TypeScript",
-  "SASS",
   "Node.js",
   "PHP",
   "SQL",
+  "NoSQL",
   "Figma",
   "Photoshop",
   "Illustrator"
@@ -136,6 +137,6 @@ export const librariesAndFrameworksData = [
   "Bootstrap"
 ];
 
-export const databasesData = ["SQL Server", "MongoDB", "MySQL", "PostgreSQL"];
+export const databasesData = ["MySQL", "PostgreSQL", "SQL Server", "MongoDB"];
 
 export const otherToolsSkillsData = ["Git", "Docker", "Jest", "Postman"];
