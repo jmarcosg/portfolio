@@ -1,13 +1,7 @@
 "use client";
 
 import { SectionDivider } from "@/components";
-import { Contact } from "./section";
-import About from "./section/About";
-import Education from "./section/Education";
-import Experience from "./section/Experience";
-import Intro from "./section/Intro";
-import Projects from "./section/Projects";
-import Skills from "./section/Skills";
+import { About, Contact, Education, Experience, Intro, Projects, Skills } from "./section";
 
 export default function Home() {
   return (
