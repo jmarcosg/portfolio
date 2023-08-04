@@ -1,3 +1,4 @@
+export { default as SubmitButton } from "./Button/Submit/";
 export { default as Header } from "./Header";
 export { default as Project } from "./Project";
 export { default as SectionDivider } from "./Section/Divider";
