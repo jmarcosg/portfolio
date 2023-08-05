@@ -37,7 +37,7 @@ const Education = () => {
               icon={experience.icon}
               iconStyle={{
                 background: theme === "light" ? "white" : "rgba(255, 255, 255)",
-                color: theme === "light" ? "white" : "#6b7280",
+                color: "#6b7280",
                 fontSize: "1.5rem",
                 boxShadow: "none"
               }}
