@@ -105,6 +105,7 @@ const Intro = () => {
           href="https://www.linkedin.com/in/jmarcosg/"
           target="_blank"
           rel="noreferrer"
+          aria-label="Juan Marcos' LinkedIn profile"
         >
           <BsLinkedin />
         </a>
@@ -114,6 +115,7 @@ const Intro = () => {
           href="https://github.com/jmarcosg"
           target="_blank"
           rel="noreferrer"
+          aria-label="Juan Marcos' GitHub profile"
         >
           <BsGithub />
         </a>
