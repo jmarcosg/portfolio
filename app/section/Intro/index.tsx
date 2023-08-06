@@ -1,6 +1,8 @@
 "use client";
 
+import { HighlightNotation } from "@/components";
 import { useActiveSectionContext } from "@/context/ActiveSection";
+import { useTheme } from "@/context/ThemeContext";
 import { useSectionInView } from "@/hooks/useSectionInView";
 import jmarcosgImg from "@/public/jmarcosg.webp";
 import { motion } from "framer-motion";
@@ -12,6 +14,7 @@ import { HiMail } from "react-icons/hi";
 const Intro = () => {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const { theme } = useTheme();
 
   return (
     <section ref={ref} id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
@@ -54,15 +57,28 @@ const Intro = () => {
 
       <motion.h1
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
       >
-        <span className="font-bold">Hello, I'm Juan Marcos.</span>
+        <span className="font-bold">Hello, I'm Juan Marcos Gonzalez.</span>
         <br />
-        <span className="font-semibold">Full Stack Software Developer</span> oriented to{" "}
-        <span className="font-semibold">Front-end Development</span> who enjoys building{" "}
-        <span className="italic">simple, yet beautiful solutions</span>.
-        {/* My main is{" "}<span className="underline">React (Next.js)</span>. */}
+        <span className="font-semibold">
+          <HighlightNotation
+            color={theme === "light" ? "rgba(147, 197, 253, 0.6)" : "rgba(96, 164, 250, 0.6)"}
+          >
+            Full Stack Software Developer
+          </HighlightNotation>
+        </span>{" "}
+        oriented to <span className="font-semibold">Front-end Development</span> who thrives on{" "}
+        <span className="italic">
+          <HighlightNotation
+            color={theme === "light" ? "rgba(212, 212, 216, 0.6)" : "rgba(161, 161, 170, 0.6)"}
+          >
+            simple
+          </HighlightNotation>
+          , yet <HighlightNotation color={"rgba(244, 114, 182, 0.6)"}>beautiful </HighlightNotation>solutions
+        </span>
+        .{/* My main is{" "}<span className="underline">React (Next.js)</span>. */}
       </motion.h1>
 
       <motion.div
