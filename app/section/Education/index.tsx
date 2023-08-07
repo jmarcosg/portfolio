@@ -63,7 +63,7 @@ const Education = () => {
           href="/CV Gonzalez Juan Marcos.pdf"
           download
         >
-          Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          Download CV <HiDownload className="opacity-60 transition" />
         </a>
       </motion.div>
     </section>
