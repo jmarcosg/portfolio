@@ -28,13 +28,13 @@ const Intro = () => {
               duration: 0.2
             }}
           >
-            <div className="h-28 w-28 rounded-full border-[0.35rem] border-white overflow-hidden">
+            <div className="h-32 w-32 rounded-full border-[0.35rem] border-white overflow-hidden">
               <Image
                 src={jmarcosgImg}
                 alt="A portrait photograph of Juan Marcos looking over his shoulder"
                 quality="95"
                 priority={true}
-                className="h-28 w-28 rounded-full object-cover scale-[1.80]"
+                className="h-32 w-32 rounded-full object-cover scale-[1.80]"
               />
             </div>
           </motion.div>
@@ -76,7 +76,7 @@ const Intro = () => {
           >
             simple
           </HighlightNotation>
-          , yet <HighlightNotation color={"rgba(244, 114, 182, 0.6)"}>beautiful </HighlightNotation>solutions
+          , yet <HighlightNotation color={"rgba(244, 114, 182, 0.6)"}>beautiful</HighlightNotation> solutions
         </span>
         .{/* My main is{" "}<span className="underline">React (Next.js)</span>. */}
       </motion.h1>
