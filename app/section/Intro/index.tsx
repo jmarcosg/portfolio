@@ -66,7 +66,7 @@ const Intro = () => {
           <HighlightNotation
             color={theme === "light" ? "rgba(147, 197, 253, 0.6)" : "rgba(96, 164, 250, 0.6)"}
           >
-            Full Stack Software Developer
+            Developer
           </HighlightNotation>
         </span>{" "}
         oriented to <span className="font-semibold">Front-end Development</span> who thrives on{" "}
