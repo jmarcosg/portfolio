@@ -2,10 +2,12 @@
 
 import { Button } from "@/components/ui";
 import { siteData } from "@/config";
+import { useSectionInView } from "@/hooks";
 import React from "react";
 import { EducationList } from "./education-list";
 
 export const Education = () => {
+	const { ref } = useSectionInView("Education");
 	const [collapsed, setCollapsed] = React.useState(true);
 
 	const educationData = siteData.education;
@@ -18,7 +20,7 @@ export const Education = () => {
 	};
 
 	return (
-		<div>
+		<section id="education" ref={ref}>
 			<h2 className="font-display mb-4 text-2xl font-bold md:text-3xl">
 				Education
 			</h2>
@@ -28,6 +30,6 @@ export const Education = () => {
 					{collapsed ? "Show all education" : "Show less"}
 				</Button>
 			)}
-		</div>
+		</section>
 	);
 };
