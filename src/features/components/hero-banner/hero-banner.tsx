@@ -5,6 +5,7 @@ import { NotationHighlight } from "@/components";
 import { Button } from "@/components/ui";
 import { useActiveSectionContext, useTheme } from "@/contexts";
 import { useSectionInView } from "@/hooks";
+import Link from "next/link";
 import { MouseScrollAnimation } from "./mouse-scroll-animation";
 
 export const HeroBanner = () => {
@@ -44,15 +45,16 @@ export const HeroBanner = () => {
 				</h2>
 
 				<div className="flex justify-center space-x-2 sm:space-x-4">
-					<Button
-						size="lg"
-						variant="default"
-						onClick={() => {
-							setActiveSection("Contact");
-							setTimeOfLastClick(Date.now());
-						}}
-					>
-						Get in touch
+					<Button size="lg" variant="default" asChild>
+						<Link
+							href="#contact"
+							onClick={() => {
+								setActiveSection("Contact");
+								setTimeOfLastClick(Date.now());
+							}}
+						>
+							<span className="font-semibold">Get in touch</span>
+						</Link>
 					</Button>
 					<Button size="icon" variant="neutral" asChild>
 						<a
