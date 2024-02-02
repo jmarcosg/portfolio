@@ -8,10 +8,18 @@
 		"rules": {
 			"recommended": true,
 			"a11y": {
-				"useKeyWithClickEvents": "off"
+				"useKeyWithClickEvents": "off",
+				"noSvgWithoutTitle": "off"
+			},
+			"correctness": {
+				"useExhaustiveDependencies": "off"
 			},
 			"suspicious": {
-				"noArrayIndexKey": "warn"
+				"noArrayIndexKey": "warn",
+				"noImplicitAnyLet": "warn"
+			},
+			"style": {
+				"noInferrableTypes": "off"
 			}
 		}
 	}
