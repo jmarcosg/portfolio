@@ -16,7 +16,7 @@ export const siteData: TSiteConfig = {
 		"Team-working",
 		"Adaptability",
 		"Creativity",
-		"Groth Mindset",
+		"Growth Mindset",
 		"Mentoring",
 	],
 	frontend: [
