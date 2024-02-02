@@ -10,7 +10,7 @@ const mobileSkillsData = siteData.mobile;
 
 export const Skills = () => {
 	return (
-		<section>
+		<section className="mx-auto w-full max-w-4xl">
 			<h2 className="font-display text-center mb-4 text-2xl font-bold md:text-3xl">
 				Skills
 			</h2>

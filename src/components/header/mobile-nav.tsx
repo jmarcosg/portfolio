@@ -28,7 +28,7 @@ const nav = [
 export const MobileNav = () => {
 	const [open, setOpen] = React.useState<boolean>(false);
 	const handleClose = () => {
-		setOpen(false);
+		setOpen(!open);
 	};
 
 	return (
@@ -41,7 +41,7 @@ export const MobileNav = () => {
 					</Button>
 				</SheetTrigger>
 				<SheetContent side="right" className="w-40 pt-12">
-					<Nav direction="column" />
+					<Nav direction="column" onNavItemClick={handleClose} />
 				</SheetContent>
 			</Sheet>
 		</div>

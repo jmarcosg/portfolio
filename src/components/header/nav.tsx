@@ -7,16 +7,18 @@ import Link from "next/link";
 
 interface INav {
 	direction?: "column" | "row";
+	onNavItemClick?: () => void;
 }
 
-export const Nav: React.FC<INav> = (direction) => {
+export const Nav = (props: INav) => {
+	const { direction = "row", onNavItemClick } = props;
 	const { activeSection, setActiveSection, setTimeOfLastClick } =
 		useActiveSectionContext();
 
 	return (
 		<nav
 			className={cn("flex space-x-0 md:space-x-2", {
-				"flex-col items-stretch": direction.direction === "column",
+				"flex-col items-stretch": direction === "column",
 			})}
 		>
 			{links?.map(
@@ -32,6 +34,7 @@ export const Nav: React.FC<INav> = (direction) => {
 									: "text-foreground/60",
 							)}
 							onClick={() => {
+								onNavItemClick?.();
 								setActiveSection(link.name);
 								setTimeOfLastClick(Date.now());
 							}}
