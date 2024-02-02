@@ -1,6 +1,5 @@
 "use client";
 
-import jmarcosg from "@/assets/images/jmarcosg.webp";
 import { NotationHighlight, NotationUnderline } from "@/components";
 import { useActiveSectionContext, useTheme } from "@/contexts";
 import { useSectionInView } from "@/hooks";
@@ -23,7 +22,7 @@ export const About = () => {
 			id="about"
 		>
 			<Image
-				src={jmarcosg}
+				src="https://www.github.com/jmarcosg.png"
 				height={300}
 				width={200}
 				alt="A portrait photograph of Juan Marcos looking over his shoulder"
