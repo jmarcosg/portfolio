@@ -21,8 +21,10 @@ export const siteData: TSiteConfig = {
 	],
 	frontend: [
 		"React",
+		"NextJS",
 		"Angular",
 		"TypeScript",
+		"ShadcnUI",
 		"Tailwind CSS",
 		"Material UI",
 		"Bootstrap",
@@ -34,6 +36,7 @@ export const siteData: TSiteConfig = {
 		"PHP",
 		"Laravel",
 		"SQL",
+		"MySQL",
 		"PostgreSQL",
 		"MongoDB",
 	],
