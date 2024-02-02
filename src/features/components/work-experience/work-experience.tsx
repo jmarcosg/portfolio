@@ -21,7 +21,7 @@ export const WorkExperience = () => {
 	};
 
 	return (
-		<section ref={ref} id="experience">
+		<section ref={ref} id="experience" className="mx-auto w-full max-w-4xl">
 			<h2 className="font-display mb-4 text-2xl font-bold md:text-3xl">
 				Work Experience
 			</h2>

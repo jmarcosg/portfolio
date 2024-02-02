@@ -20,7 +20,7 @@ export const Education = () => {
 	};
 
 	return (
-		<section id="education" ref={ref}>
+		<section id="education" ref={ref} className="mx-auto w-full max-w-4xl">
 			<h2 className="font-display mb-4 text-2xl font-bold md:text-3xl">
 				Education
 			</h2>
