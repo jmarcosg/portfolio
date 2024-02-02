@@ -1,5 +1,6 @@
 "use client";
 
+import { Badge } from "@/components/ui";
 import { motion } from "framer-motion";
 
 type SkillStackProps = {
@@ -32,13 +33,13 @@ export const SkillsList = ({ title, skillsData }: SkillStackProps) => {
 			}}
 			custom={"languages"}
 		>
-			<h4 className="text-xl uppercase font-medium my-8 text-center text-gray-700 dark:text-gray-300">
+			<h4 className="text-xl uppercase font-medium my-6 text-center text-gray-700 dark:text-gray-300">
 				{title}
 			</h4>
 			<motion.ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
 				{skillsData.map((skill, index) => (
 					<motion.li
-						className="bg-white borderBlack rounded-xl px-5 py-3 !text-base select-none dark:bg-white/10 dark:text-white/80"
+						className="select-none"
 						key={index}
 						variants={fadeInAnimationVariants}
 						initial="initial"
@@ -48,7 +49,9 @@ export const SkillsList = ({ title, skillsData }: SkillStackProps) => {
 						}}
 						custom={index}
 					>
-						{skill}
+						<Badge key={index} color="primary" size="md" variant="filled">
+							{skill}
+						</Badge>
 					</motion.li>
 				))}
 			</motion.ul>
