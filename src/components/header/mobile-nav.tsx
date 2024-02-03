@@ -6,25 +6,6 @@ import { Button } from "../ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 import { Nav } from "./nav";
 
-const nav = [
-	{
-		title: "Home",
-		href: "/",
-	},
-	{
-		title: "Blog",
-		href: "/blog",
-	},
-	{
-		title: "Courses",
-		href: "/courses",
-	},
-	{
-		title: "Useful tools",
-		href: "/tools",
-	},
-];
-
 export const MobileNav = () => {
 	const [open, setOpen] = React.useState<boolean>(false);
 	const handleClose = () => {

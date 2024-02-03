@@ -49,7 +49,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 							<div className="min-h-[calc(100vh-64px)]">{children}</div>
 							<Footer />
 
-							<Toaster />
+							<Toaster richColors />
 						</ActiveSectionContextProvider>
 					</ThemeProvider>
 				</ThemeContextProvider>

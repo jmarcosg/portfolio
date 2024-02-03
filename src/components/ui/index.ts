@@ -1,7 +1,9 @@
-export * from "./badge"
-export * from "./button"
-export * from "./input"
-export * from "./separator"
-export * from "./sheet"
-export * from "./sonner"
-
+export * from "./badge";
+export * from "./button";
+export * from "./form";
+export * from "./input";
+export * from "./label";
+export * from "./separator";
+export * from "./sheet";
+export * from "./sonner";
+export * from "./textarea";
