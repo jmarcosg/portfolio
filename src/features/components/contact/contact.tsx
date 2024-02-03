@@ -1,13 +1,50 @@
 "use client";
 
-import { Button } from "@/components/ui";
+import {
+	Button,
+	Form,
+	FormControl,
+	FormField,
+	FormItem,
+	FormMessage,
+	Input,
+	Textarea,
+} from "@/components/ui";
 import { useSectionInView } from "@/hooks";
+import { contactFormSchema } from "@/schemas";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
 import { toast } from "sonner";
+import * as z from "zod";
 import { sendEmail } from "./actions";
 
 export const Contact = () => {
 	const { ref } = useSectionInView("Contact");
+	const [isSendingEmail, setIsSendingEmail] = useState(false);
+
+	const form = useForm<z.infer<typeof contactFormSchema>>({
+		resolver: zodResolver(contactFormSchema),
+		defaultValues: {
+			email: "",
+			senderMessage: "",
+		},
+	});
+
+	const onSubmit = async (values: z.infer<typeof contactFormSchema>) => {
+		setIsSendingEmail(true);
+		const { data, error } = await sendEmail(values);
+
+		if (error) {
+			setIsSendingEmail(false);
+			toast.error(error);
+			return;
+		}
+
+		setIsSendingEmail(false);
+		toast.success("Email sent successfully!");
+	};
 
 	return (
 		<motion.section
@@ -42,40 +79,50 @@ export const Contact = () => {
 				Or through this form
 			</p>
 
-			<form
-				className="mt-4 flex flex-col dark:text-black"
-				action={async (formData) => {
-					const { data, error } = await sendEmail(formData);
+			<Form {...form}>
+				<form
+					className="grid gap-2 py-4"
+					onSubmit={form.handleSubmit(onSubmit)}
+				>
+					<FormField
+						control={form.control}
+						name="email"
+						render={({ field }) => (
+							<FormItem>
+								<FormControl>
+									<Input
+										{...field}
+										placeholder="your@email.com"
+										className="bg-white/80 transition-all px-4"
+									/>
+								</FormControl>
+								<FormMessage />
+							</FormItem>
+						)}
+					/>
 
-					if (error) {
-						toast.error(error);
-						return;
-					}
-
-					toast.success("Email sent successfully!");
-				}}
-			>
-				<input
-					className="h-14 px-4 rounded-lg borderBlack dark:bg-white transition-all dark:outline-none"
-					name="senderEmail"
-					type="email"
-					placeholder="your.name@email.com"
-					maxLength={500}
-					required
-				/>
-
-				<textarea
-					className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white transition-all dark:outline-none"
-					name="senderMessage"
-					placeholder="Your message"
-					maxLength={5000}
-					required
-				/>
-
-				<Button type="submit" className="w-full">
-					Submit
-				</Button>
-			</form>
+					<FormField
+						control={form.control}
+						name="senderMessage"
+						render={({ field }) => (
+							<FormItem>
+								<FormControl>
+									<Textarea
+										{...field}
+										placeholder="Your message"
+										className="resize-none bg-white/80 h-52 my-3 p-4 transition-all"
+										maxLength={5000}
+									/>
+								</FormControl>
+								<FormMessage />
+							</FormItem>
+						)}
+					/>
+					<Button type="submit" className="w-full" disabled={isSendingEmail}>
+						Submit
+					</Button>
+				</form>
+			</Form>
 		</motion.section>
 	);
 };
