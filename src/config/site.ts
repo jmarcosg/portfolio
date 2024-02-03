@@ -81,7 +81,7 @@ export const siteData: TSiteConfig = {
 			degree: "Bachelor's of Science degree",
 			fieldOfStudy: "computer science",
 			description:
-				"Learning about algorithms, data structures and software engineering, and web development.",
+				"Learning about algorithms, data structures and software engineering.",
 			startDate: "2023",
 			endDate: "Present",
 		},
