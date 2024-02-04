@@ -12,6 +12,8 @@ export const dynamic = "force-dynamic";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const sendEmail = async (formData: TContactForm) => {
+	"use server";
+
 	const senderEmail = formData.email;
 	const message = formData.senderMessage;
 
