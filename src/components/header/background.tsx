@@ -1,19 +1,20 @@
-"use client"
+"use client";
 
-import { useScroll } from "@/hooks"
-import { cn } from "@/lib/utils"
-import { useSearchParams } from "next/navigation"
+import { useScroll } from "@/hooks";
+import { cn } from "@/lib/utils";
+import { useSearchParams } from "next/navigation";
 
 export const Background = () => {
-  useSearchParams()
-  const { scrolled } = useScroll(0)
+	useSearchParams();
+	const { scrolled } = useScroll(0);
+	const pageHash = window.location.hash;
 
-  return (
-    <div
-      className={cn(
-        "bg-background/70 absolute left-0 top-0 z-[-1] h-full w-full opacity-0 shadow-md backdrop-blur-md transition-all",
-        { "opacity-100": scrolled }
-      )}
-    />
-  )
-}
+	return (
+		<div
+			className={cn(
+				"bg-background/70 absolute left-0 top-0 z-[-1] h-full w-full opacity-0 shadow-md backdrop-blur-md transition-all",
+				{ "opacity-100": scrolled || pageHash },
+			)}
+		/>
+	);
+};
