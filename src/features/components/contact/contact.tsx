@@ -98,7 +98,7 @@ export const Contact = () => {
 									<Input
 										{...field}
 										placeholder="your@email.com"
-										className="bg-white/80 transition-all px-4"
+										className="bg-white/80 dark:bg-slate-700 transition-all px-4 text-gray-700 dark:text-white/80"
 									/>
 								</FormControl>
 								<FormMessage />
@@ -115,7 +115,7 @@ export const Contact = () => {
 									<Textarea
 										{...field}
 										placeholder="Your message"
-										className="resize-none bg-white/80 h-52 my-3 p-4 transition-all"
+										className="resize-none bg-white/80 dark:bg-slate-700 h-52 my-3 p-4 transition-all text-gray-700 dark:text-white/80"
 										maxLength={5000}
 									/>
 								</FormControl>
