@@ -34,12 +34,13 @@ export const Contact = () => {
 
 	const onSubmit = async (values: z.infer<typeof contactFormSchema>) => {
 		setIsSendingEmail(true);
+
 		try {
 			const { data, error } = await sendEmail(values);
 
 			if (error) {
 				setIsSendingEmail(false);
-				toast.error(error);
+				toast.error("Apologies! Please try again.");
 				return;
 			}
 
