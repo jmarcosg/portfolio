@@ -16,7 +16,10 @@ type ContactFormEmailProps = {
 	senderEmail: string;
 };
 
-const ContactForm = ({ message, senderEmail }: ContactFormEmailProps) => {
+export const ContactForm = ({
+	message,
+	senderEmail,
+}: ContactFormEmailProps) => {
 	return (
 		<Html>
 			<Head />
@@ -38,5 +41,3 @@ const ContactForm = ({ message, senderEmail }: ContactFormEmailProps) => {
 		</Html>
 	);
 };
-
-export default ContactForm;
