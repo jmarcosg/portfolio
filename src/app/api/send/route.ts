@@ -1,15 +1,16 @@
 import { ContactForm } from "@/components";
+import { CONTACT_EMAIL, RESEND_API_KEY } from "@/config";
 import * as React from "react";
 import { Resend } from "resend";
 
 export async function POST(message: string, senderEmail: string) {
-	const resend = new Resend(process.env.RESEND_API_KEY);
+	const resend = new Resend(RESEND_API_KEY);
 
 	try {
 		const { data, error } = await resend.emails.send({
-			from: "Acme <onboarding@resend.dev>",
-			to: ["delivered@resend.dev"],
-			subject: "Hello world",
+			from: "Portfolio Contact Form <onboarding@resend.dev>",
+			to: `${CONTACT_EMAIL}`,
+			subject: "<HelloWorld/>",
 			react: ContactForm({
 				message: message,
 				senderEmail: senderEmail,
