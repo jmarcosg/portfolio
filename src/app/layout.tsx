@@ -46,7 +46,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 					<ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
 						<ActiveSectionContextProvider>
 							<Header />
-							<div className="min-h-[calc(100vh-64px)]">{children}</div>
+							<main className="min-h-[calc(100dvh-64px)]">{children}</main>
 							<Footer />
 
 							<Toaster richColors />

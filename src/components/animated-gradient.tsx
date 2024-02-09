@@ -4,7 +4,7 @@ import { Variants, motion } from "framer-motion";
 
 export const AnimatedGradient = () => (
 	<div
-		style={{ position: "absolute", width: "100%", zIndex: "-1", opacity: 0.5 }}
+		style={{ position: "absolute", width: "100%", zIndex: "-1", opacity: 0.2 }}
 	>
 		<div
 			style={{
