@@ -2,15 +2,17 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+This project uses Bun as the primary package manager and lockfile owner.
+
+Install dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+bun install
+```
+
+Run the development server:
+
+```bash
 bun dev
 ```
 
@@ -19,6 +21,20 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Build Quality Gates
+
+`bun run build` enforces type checking and linting during the production build.
+
+## Security Audit
+
+Run a temporary lockfile audit (without adopting `package-lock.json`):
+
+```bash
+bun run audit:temp
+```
+
+Audit reports are saved to `docs/upgrade/audit-report.json`.
 
 ## Learn More
 
