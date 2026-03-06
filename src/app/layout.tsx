@@ -39,7 +39,11 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
 	return (
-		<html lang="en" className={`!scroll-smooth ${display.variable}`}>
+		<html
+			lang="en"
+			className={`!scroll-smooth ${display.variable}`}
+			suppressHydrationWarning
+		>
 			<body>
 				<Analytics />
 				<ThemeContextProvider>
