@@ -30,7 +30,7 @@ export const About = () => {
 				className="aspect-[auto 200 / 300] my-6 rounded-full object-cover"
 			/>
 
-			<div className="border-1 border-solid border-red-500">
+			<div>
 				<h2 className="font-display mb-4 text-2xl font-bold md:text-3xl">
 					About me
 				</h2>

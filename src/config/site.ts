@@ -42,15 +42,27 @@ export const siteData: TSiteConfig = {
 	],
 	mobile: ["React Native", "Ionic"],
 	experience: [
+				{
+			title: "Software Developer",
+			company: "Minimalart",
+			link: "https://minimalart.co/",
+			location: "Argentina (Remote)",
+			startDate: "2025",
+			endDate: "Present",
+			description: [
+				"I'm now a frontend developer focused on building web applications using modern technologies and best practices. Working on projects that are built to help national and international brands to grow their business and improve their online presence.",
+			],
+			tags: ["Software Development", "Innovation", "Collaboration", "AI Integration"],
+		},
 		{
 			title: "Software Developer",
 			company: "Secretaría de Modernización - Municipalidad de Neuquén",
 			link: "https://www.neuquencapital.gov.ar/secretaria-de-modernizacion/subsecretaria-de-sistemas/",
 			location: "Neuquén, NQN, Argentina",
 			startDate: "2022",
-			endDate: "Present",
+			endDate: "2025",
 			description: [
-				"I'm now a full-stack developer who is mainly in charge of the front-end development of software solutions that are built to help Neuquén's citizens and digitalize the city's processes. I'm also in charge of overseeing and teaching interns and junior developers that join the team.",
+				"As a full-stack developer, I was mainly in charge of the front-end development of software solutions that were built to help Neuquén's citizens and digitalize the city's processes. I was also in charge of overseeing and teaching interns and junior developers that joined the team.",
 			],
 			tags: [
 				"Software Development",
