@@ -10,6 +10,7 @@ import {
 	Input,
 	Textarea,
 } from "@/components/ui";
+import { siteData } from "@/config";
 import { useSectionInView } from "@/hooks";
 import { contactFormSchema } from "@/schemas";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -76,8 +77,8 @@ export const Contact = () => {
 
 			<p className="text-gray-700 -mt-6 dark:text-white/80">
 				Please contact me directly at{" "}
-				<a className="underline" href="mailto:jmarcos.gonzalez94@gmail.com">
-					jmarcos.gonzalez94@gmail.com
+				<a className="underline" href={`mailto:${siteData.links.mail}`}>
+					{siteData.links.mail}
 				</a>
 			</p>
 

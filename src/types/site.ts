@@ -34,6 +34,8 @@ export type TSiteConfig = {
 	softSkills: string[];
 	frontend: string[];
 	backend: string[];
+	appliedAI: string[];
+	cloudTools: string[];
 	mobile: string[];
 	experience: TWorkExperience[];
 	education: TEducation[];

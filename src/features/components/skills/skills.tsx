@@ -6,6 +6,8 @@ import { SkillsList } from "./skills-list";
 const softSkillsData = siteData.softSkills;
 const frontendSkillsData = siteData.frontend;
 const backendSkillsData = siteData.backend;
+const appliedAISkillsData = siteData.appliedAI;
+const cloudToolsSkillsData = siteData.cloudTools;
 const mobileSkillsData = siteData.mobile;
 
 export const Skills = () => {
@@ -17,6 +19,8 @@ export const Skills = () => {
 			<SkillsList title="Soft Skills" skillsData={softSkillsData} />
 			<SkillsList title="Frontend" skillsData={frontendSkillsData} />
 			<SkillsList title="Backend" skillsData={backendSkillsData} />
+			<SkillsList title="Applied AI" skillsData={appliedAISkillsData} />
+			<SkillsList title="Cloud & Tools" skillsData={cloudToolsSkillsData} />
 			<SkillsList title="Mobile" skillsData={mobileSkillsData} />
 		</section>
 	);
