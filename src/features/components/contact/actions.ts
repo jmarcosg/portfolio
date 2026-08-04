@@ -1,6 +1,6 @@
 "use server";
 
-import { ContactForm } from "@/components";
+import { ContactForm } from "@/components/email";
 import { CONTACT_EMAIL, RESEND_API_KEY } from "@/config";
 import { TContactForm } from "@/types/form";
 import { Resend } from "resend";
