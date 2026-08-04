@@ -45,8 +45,17 @@ export const About = () => {
 				</p>
 
 				<p className="text-md mb-4 lg:text-lg">
-					Graduated from Universidad Nacional del Comahue (Neuquén, Argentina
-					🇦🇷) with a degree in Software Development.
+					Graduated as a University Technician in Web Application Development
+					from Universidad Nacional del Comahue (Neuquén, Argentina 🇦🇷), and
+					currently finishing a Bachelor's Degree in Computer Science at the
+					same university.
+				</p>
+
+				<p className="text-md mb-4 lg:text-lg">
+					I'm currently working as a Frontend/Fullstack Developer at
+					Minimalart, building web applications for national and
+					international brands and integrating applied AI features like
+					conversational product search and automated content generation.
 				</p>
 
 				<p className="text-md mb-4 lg:text-lg">
