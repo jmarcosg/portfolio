@@ -3,15 +3,16 @@
 import { Github, Linkedin } from "@/assets/icons";
 import { NotationHighlight } from "@/components";
 import { Button } from "@/components/ui";
-import { useActiveSectionContext, useTheme } from "@/contexts";
+import { useActiveSectionContext } from "@/contexts";
 import { useSectionInView } from "@/hooks";
+import { useTheme } from "next-themes";
 import Link from "next/link";
 import { MouseScrollAnimation } from "./mouse-scroll-animation";
 
 export const HeroBanner = () => {
 	const { ref } = useSectionInView("Home", 0.5);
 	const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-	const { theme } = useTheme();
+	const { resolvedTheme: theme } = useTheme();
 
 	return (
 		<section

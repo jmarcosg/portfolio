@@ -1,7 +1,6 @@
 import { Footer, Header, ThemeProvider } from "@/components";
 import { Toaster } from "@/components/ui";
 import ActiveSectionContextProvider from "@/contexts/active-section-context";
-import ThemeContextProvider from "@/contexts/theme-context";
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
@@ -46,17 +45,15 @@ export default function RootLayout({ children }: RootLayoutProps) {
 		>
 			<body>
 				<Analytics />
-				<ThemeContextProvider>
-					<ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-						<ActiveSectionContextProvider>
-							<Header />
-							<main className="min-h-[calc(100dvh-64px)]">{children}</main>
-							<Footer />
+				<ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+					<ActiveSectionContextProvider>
+						<Header />
+						<main className="min-h-[calc(100dvh-64px)]">{children}</main>
+						<Footer />
 
-							<Toaster richColors />
-						</ActiveSectionContextProvider>
-					</ThemeProvider>
-				</ThemeContextProvider>
+						<Toaster richColors />
+					</ActiveSectionContextProvider>
+				</ThemeProvider>
 			</body>
 		</html>
 	);
