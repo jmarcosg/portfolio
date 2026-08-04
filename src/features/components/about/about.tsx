@@ -23,7 +23,7 @@ export const About = () => {
 			id="about"
 		>
 			<Image
-				src="https://www.github.com/jmarcosg.png"
+				src="/jmarcosg-avatar.jpg"
 				height={300}
 				width={200}
 				alt="A portrait photograph of Juan Marcos looking over his shoulder"
