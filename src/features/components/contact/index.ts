@@ -1,1 +1,1 @@
-export { Contact } from "./contact";
+export { LazyContact as Contact } from "./lazy-contact";
