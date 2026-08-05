@@ -1,5 +1,5 @@
 import { Footer, Header, ThemeProvider } from "@/components";
-import { Toaster } from "@/components/ui";
+import { LazyToaster as Toaster } from "@/components/lazy-toaster";
 import ActiveSectionContextProvider from "@/contexts/active-section-context";
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
