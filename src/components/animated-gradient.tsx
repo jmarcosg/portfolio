@@ -47,7 +47,6 @@ const Gradient = () => {
 				rotate: 0,
 			},
 			animate: {
-				fill: [...colors, colors[0]],
 				rotate: 360,
 				transition: {
 					repeat: Infinity,

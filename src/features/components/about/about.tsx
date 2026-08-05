@@ -1,16 +1,17 @@
 "use client";
 
 import { NotationHighlight, NotationUnderline } from "@/components";
-import { useActiveSectionContext, useTheme } from "@/contexts";
+import { useActiveSectionContext } from "@/contexts";
 import { useSectionInView } from "@/hooks";
 import { motion } from "framer-motion";
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
 
 export const About = () => {
 	const { ref } = useSectionInView("About", 0.5);
 	const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-	const { theme } = useTheme();
+	const { resolvedTheme: theme } = useTheme();
 
 	return (
 		<motion.section
@@ -22,7 +23,7 @@ export const About = () => {
 			id="about"
 		>
 			<Image
-				src="https://www.github.com/jmarcosg.png"
+				src="/jmarcosg-avatar.jpg"
 				height={300}
 				width={200}
 				alt="A portrait photograph of Juan Marcos looking over his shoulder"
