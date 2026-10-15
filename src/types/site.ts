@@ -31,12 +31,11 @@ export type TSiteConfig = {
 	description: string;
 	links: TLinks;
 	languages: string[];
-	softSkills: string[];
+	product: string[];
 	frontend: string[];
 	backend: string[];
 	appliedAI: string[];
 	cloudTools: string[];
-	mobile: string[];
 	experience: TWorkExperience[];
 	education: TEducation[];
 };

@@ -12,10 +12,13 @@ export const metadata: Metadata = {
 		name: "Juan Marcos Gonzalez",
 	},
 	description:
-		"Juan Marcos is a Fullstack Software Developer oriented to the Frontend Development.",
+		"Juan Marcos Gonzalez is a Product Builder and Software Engineer building digital products with applied AI and automation.",
 	keywords: [
-		"Frontend",
-		"Developer",
+		"Product Builder",
+		"Software Engineer",
+		"Fullstack",
+		"Applied AI",
+		"Automation",
 		"React",
 		"Next.js",
 		"Angular",

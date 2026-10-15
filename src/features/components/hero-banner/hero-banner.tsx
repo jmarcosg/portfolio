@@ -23,12 +23,12 @@ export const HeroBanner = () => {
 			<div className="pb-28 container">
 				<h1 className="font-display mb-2 px-20 text-center text-3xl md:text-4xl lg:text-5xl xl:text-5xl">
 					<span>Hey there! I'm Juan Marcos Gonzalez.</span>
-					<span className="text-primary"> Frontend / Fullstack</span> Software
-					Developer.
+					<span className="text-primary"> Product Builder</span> & Software
+					Engineer.
 				</h1>
 
 				<h2 className="mb-8 text-center text-lg md:text-xl">
-					I thrive on{" "}
+					I turn concrete problems into{" "}
 					<NotationHighlight
 						color={
 							theme === "light"
@@ -36,13 +36,13 @@ export const HeroBanner = () => {
 								: "rgba(161, 161, 170, 0.6)"
 						}
 					>
-						simple
+						useful
 					</NotationHighlight>
-					, yet{" "}
+					,{" "}
 					<NotationHighlight color={"rgba(244, 114, 182, 0.7)"}>
-						beautiful
+						maintainable
 					</NotationHighlight>{" "}
-					solutions
+					products
 				</h2>
 
 				<div className="flex justify-center space-x-2 sm:space-x-4">
