@@ -46,17 +46,27 @@ export const About = () => {
 				</p>
 
 				<p className="text-md mb-4 lg:text-lg">
-					Graduated as a University Technician in Web Application Development
-					from Universidad Nacional del Comahue (Neuquén, Argentina 🇦🇷), and
-					currently finishing a Bachelor's Degree in Computer Science at the
-					same university.
+					I'm a Software Engineer and Product Builder. Over six years, I've
+					worked in public services, education and B2B/B2C e-commerce:
+					different contexts where I combined an understanding of needs with
+					technical execution.
 				</p>
 
 				<p className="text-md mb-4 lg:text-lg">
-					I'm currently working as a Frontend/Fullstack Developer at
-					Minimalart, building web applications for national and
-					international brands and integrating applied AI features like
-					conversational product search and automated content generation.
+					My approach starts with learning the domain, listening to the people
+					who use or operate the solution and clarifying constraints. From
+					there, I define requirements, design workflows, implement, validate
+					and iterate, using PRDs, user stories, flow diagrams and wireframes
+					to turn ambiguity into concrete decisions.
+				</p>
+
+				<p className="text-md mb-4 lg:text-lg">
+					Today I work as a Frontend Software Developer at Minimalart, building
+					with React, Next.js and TypeScript and integrating backends, APIs and
+					services. I also apply AI and automation to operational needs:
+					conversational assistants, catalog automation and WhatsApp flows. I'm
+					a Teaching Assistant at Universidad Nacional del Comahue, where I'm
+					also pursuing a Licenciatura in Computer Science.
 				</p>
 
 				<p className="text-md mb-4 lg:text-lg">
