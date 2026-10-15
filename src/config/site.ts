@@ -67,6 +67,7 @@ export const siteData: TSiteConfig = {
 			endDate: "Present",
 			description: [
 				"Develop and optimize websites and interfaces for brands including Arcor, Coca-Cola, Issue, Saphirus, Villeneuve and Fontagro, using React, Next.js and Tailwind CSS.",
+				"Core contributor and stakeholder of Brick (minimalart.co/en/brick), Minimalart's reusable Medusa v2 + Next.js commerce foundation: multi-store, ERP sync, WhatsApp flows, Typesense search, GA4 and shipping/payment integrations (Andreani, Correo Argentino, MercadoPago).",
 				"Implement responsive, maintainable interfaces with attention to performance, user experience and technical evolution. Contribute to Arcor en Casa Chile, the Issue Color redesign and AI tools for Selectio.",
 				"Develop, deploy and maintain backends and integrated services using Node.js, Medusa, Supabase, Strapi, Clerk and DigitalOcean, extending frontend work into connected solutions.",
 				"Implement a natural-language assistant for product queries, category filtering, adding items to a cart and supporting investment decisions.",
@@ -74,6 +75,7 @@ export const siteData: TSiteConfig = {
 			],
 			tags: [
 				"Product Development",
+				"Brick",
 				"E-commerce",
 				"Medusa",
 				"Applied AI",
